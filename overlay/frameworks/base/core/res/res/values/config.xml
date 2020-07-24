@@ -681,4 +681,7 @@
 	 It can allow you to tune down your device's memory use without going to the point of 
 	 causing applications to turn off features. -->
     <bool name="config_avoidGfxAccel">true</bool>
+
+    <!-- Enable the RingtonePickerActivity in 'com.android.providers.media'. -->
+    <bool name="config_defaultRingtonePickerEnabled">true</bool>
 </resources>
