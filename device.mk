@@ -505,3 +505,7 @@ PRODUCT_COPY_FILES += \
 # CustomDoze
 PRODUCT_PACKAGES += \
     CustomDoze
+
+# Enable gestural navigation overlay to match default navigation mode
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.boot.vendor.overlay.theme=com.android.internal.systemui.navbar.gestural
