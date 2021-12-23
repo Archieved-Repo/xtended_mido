@@ -34,6 +34,7 @@ XTENDED_BUILD_DONATE_URL := https://paypal.me/pratyakshb5495
 TARGET_GAPPS_ARCH := arm64
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_SCREEN_DENSITY := 400
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := mido
