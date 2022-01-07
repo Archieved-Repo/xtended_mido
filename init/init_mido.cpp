@@ -117,7 +117,7 @@ static const char *snet_prop_value[] = {
     NULL
 };
 
-static void workaround_snet_properties() {
+ static void workaround_snet_properties() {
 
      // Hide all sensitive props
     for (int i = 0; snet_prop_key[i]; ++i) {
@@ -138,6 +138,7 @@ void vendor_load_properties()
     property_override("dalvik.vm.heapminfree", heapminfree);
     property_override("dalvik.vm.heapmaxfree", heapmaxfree);
 
-    // Workaround SafetyNet
+   // Workaround SafetyNet
     workaround_snet_properties();
+
 }
