@@ -17,12 +17,6 @@
 $(call inherit-product, vendor/xiaomi/mido/mido-vendor.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_m.mk)
 
-# Board
-PRODUCT_BOARD_PLATFORM := msm8953
-PRODUCT_USES_QCOM_HARDWARE := true
-
-OVERRIDE_QCOM_HARDWARE_VARIANT := msm8996-r
-
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
@@ -432,8 +426,3 @@ PRODUCT_COPY_FILES += \
 # CustomDoze
 PRODUCT_PACKAGES += \
     CustomDoze
-
-# Hacks
-PRODUCT_DEXPREOPT_SPEED_APPS += \
-    Settings \
-    SystemUI
