@@ -23,9 +23,6 @@ PRODUCT_USES_QCOM_HARDWARE := true
 
 OVERRIDE_QCOM_HARDWARE_VARIANT := msm8996-r
 
-# Inherit MIUI Camera Port
-$(call inherit-product, vendor/xiaomi/MiuiCamera/config.mk)
-
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
